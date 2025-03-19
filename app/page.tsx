@@ -1,7 +1,13 @@
+"use client";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import About from "./components/About";
 export default function Home() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <Navbar />
+      <Header />
+      <About />
+    </>
   );
 }
