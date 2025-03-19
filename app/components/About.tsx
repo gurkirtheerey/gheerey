@@ -22,7 +22,7 @@ const About = () => {
             dynamic environments and am always eager to take on new challenges.
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-            {infoList.map(({ icon, iconDark, title, description }, index) => (
+            {infoList.map(({ icon, title, description }, index) => (
               <li
                 key={index}
                 className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 transition-all duration-300 hover:shadow-black"
