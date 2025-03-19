@@ -19,3 +19,15 @@
   --shadow-black: 4px 4px 0 #000;
   --shadow-white: 4px 4px 0 #fff;
 }
+
+@theme {
+  --grid-template-columns-auto: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.font-Ovo {
+  font-family: var(--font-Ovo);
+}
+
+.font-Outfit {
+  font-family: var(--font-Outfit);
+}
