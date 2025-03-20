@@ -45,9 +45,6 @@ const Footer = ({ isDarkMode }: { isDarkMode: boolean }) => {
               Resume
             </Link>
           </li>
-          <li>
-            <Link href="/proof-of-consent">Proof of Consent</Link>
-          </li>
         </ul>
       </div>
     </div>
