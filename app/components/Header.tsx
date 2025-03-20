@@ -49,7 +49,7 @@ const Header = () => {
         </motion.a>
         <motion.a
           href="/gurkirt_heerey_resume.pdf"
-          download
+          download="Gurkirt-Heerey-Resume.pdf"
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 dark:border-white/50 dark:text-black dark:bg-white"
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
