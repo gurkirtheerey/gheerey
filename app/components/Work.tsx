@@ -1,5 +1,6 @@
 import { assets, workData } from "@/assets/assets";
 import Image from "next/image";
+import Link from "next/link";
 
 const Work = ({ isDarkMode }: { isDarkMode: boolean }) => {
   return (
@@ -7,7 +8,9 @@ const Work = ({ isDarkMode }: { isDarkMode: boolean }) => {
       <h4 className="text-center mb-2 text-lg font-Ovo">My portfolio</h4>
       <h2 className="text-center text-5xl font-Ovo">My latest work</h2>
       <p className="text-center mx-auto max-w-2xl mt-5 mb-12 font-Ovo">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+        From working on large scale applications to small solo projects,
+        I&apos;ve built a variety of projects using the technologies listed
+        above.
       </p>
 
       <div className="grid grid-cols-auto gap-5 my-10 dark:text-black">
@@ -30,8 +33,8 @@ const Work = ({ isDarkMode }: { isDarkMode: boolean }) => {
         ))}
       </div>
 
-      <a
-        href=""
+      <Link
+        href="https://github.com/gurkirtheerey"
         className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-300 dark:text-white dark:border-white dark:hover:bg-darkHover"
       >
         Show more
@@ -42,7 +45,7 @@ const Work = ({ isDarkMode }: { isDarkMode: boolean }) => {
           alt="right-arrow-bold"
           className="w-4"
         />
-      </a>
+      </Link>
     </div>
   );
 };

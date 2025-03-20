@@ -1,4 +1,3 @@
-import { assets } from "@/assets/assets";
 import { serviceData } from "@/assets/assets";
 import { motion } from "motion/react";
 import Image from "next/image";
@@ -34,7 +33,8 @@ const Services = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center mx-auto max-w-2xl mt-5 mb-12 font-Ovo"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+        With my skills and expertise, I am able to provide a range of services
+        to help you achieve your goals.
       </motion.p>
 
       <motion.div
@@ -43,7 +43,7 @@ const Services = () => {
         transition={{ duration: 0.6, delay: 0.9 }}
         className="grid grid-cols-auto gap-6 my-10"
       >
-        {serviceData.map(({ icon, title, description, link }, index) => (
+        {serviceData.map(({ icon, title, description }, index) => (
           <motion.div
             whileHover={{ scale: 1.05 }}
             key={index}
@@ -56,14 +56,6 @@ const Services = () => {
             <p className="text-sm text-gray-600 leading-5 dark:text-white">
               {description}
             </p>
-            <a href={link} className="flex items-center gap-2 text-sm mt-5">
-              Read more
-              <Image
-                src={assets.right_arrow}
-                alt="arrow_right"
-                className="w-4"
-              />
-            </a>
           </motion.div>
         ))}
       </motion.div>

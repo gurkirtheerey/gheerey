@@ -80,23 +80,23 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
+    title: "Linqto Web",
+    description: "react",
     bgImage: "/work-1.png",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "Linqto Mobile",
+    description: "react native",
     bgImage: "/work-2.png",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    title: "Linqto CRM",
+    description: "react",
     bgImage: "/work-3.png",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
+    title: "Chatter",
+    description: "react",
     bgImage: "/work-4.png",
   },
 ];
@@ -134,20 +134,23 @@ export const infoList = [
   {
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
-    title: "Languages",
-    description: "HTML, CSS, JavaScript React Js, Next Js",
+    title: "Technologies",
+    description:
+      "HTML5, CSS3, JavaScript, React, Next.js, Node.js, Tailwind CSS, TypeScript, Redux, TanStack",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "B.Tech in Computer Science",
+    description:
+      "Bachelors of Science; Computer Science @ The University of the Pacific",
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
-    description: "Built more than 5 projects",
+    description:
+      "Check out my projects on GitHub! I've built a variety of projects using the technologies listed above.",
   },
 ];
 
