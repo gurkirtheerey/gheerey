@@ -11,13 +11,13 @@ const Header = () => {
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
       >
         <Image
-          src={assets.profile_img}
-          alt="profile_img"
+          src={assets.headshot}
+          alt="headshot"
           className="rounded-full w-32"
         />
       </motion.div>
-      <motion.h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
-        Hi! I&apos;m Gurkirt Heerey
+      <motion.h3 className="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+        Hey! I&apos;m Gurkirt Heerey
         <Image src={assets.hand_icon} alt="hand_icon" className="w-6" />
       </motion.h3>
       <motion.h1
@@ -29,8 +29,8 @@ const Header = () => {
         frontend software engineer based in Sacramento.
       </motion.h1>
       <p>
-        I am a frontend engineer from California, USA with 6 years of experience
-        in multiple companies like Linqto and Novo Technologies.
+        With 6 years of experience as a software engineer, I&apos;m ready to
+        bring my skills and expertise to the right role.
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <motion.a
@@ -48,7 +48,7 @@ const Header = () => {
           />
         </motion.a>
         <motion.a
-          href="/sample-resume.pdf"
+          href="/gurkirt_heerey_resume.pdf"
           download
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 dark:border-white/50 dark:text-black dark:bg-white"
           initial={{ y: 30, opacity: 0 }}

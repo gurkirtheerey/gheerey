@@ -1,5 +1,6 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = ({ isDarkMode }: { isDarkMode: boolean }) => {
   return (
@@ -17,7 +18,12 @@ const Footer = ({ isDarkMode }: { isDarkMode: boolean }) => {
             alt="mail"
             className="w-6"
           />
-          <span>gheerey12@gmail.com</span>
+          <a
+            href="mailto:gheerey12@gmail.com?subject=Hello&body=Hi%20there"
+            className="hover:underline"
+          >
+            gheerey12@gmail.com
+          </a>
         </div>
       </div>
 
@@ -25,13 +31,10 @@ const Footer = ({ isDarkMode }: { isDarkMode: boolean }) => {
         <p>@ 2025 Gurkirt Heerey. All rights reserved.</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
-            <a href="https://github.com/gurkirtheerey">GitHub</a>
+            <Link href="https://github.com/gurkirtheerey">GitHub</Link>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/gurkirtheerey/">LinkedIn</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/gurkirtheerey/">Instagram</a>
+            <Link href="https://www.linkedin.com/in/gheerey/">LinkedIn</Link>
           </li>
         </ul>
       </div>

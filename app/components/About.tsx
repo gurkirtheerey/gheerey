@@ -39,7 +39,7 @@ const About = ({ isDarkMode }: { isDarkMode: boolean }) => {
           className="w-64 sm:w-80 rounded-3xl max-w-none"
         >
           <Image
-            src={assets.user_image}
+            src={assets.soloshot}
             alt="user_image"
             className="w-full rounded-3xl"
           />
