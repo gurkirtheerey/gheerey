@@ -1,16 +1,7 @@
 "use client";
 import { useState } from "react";
-import Navbar from "../components/Navbar";
 
-interface ProofOfConsentProps {
-  isDarkMode: boolean;
-  setIsDarkMode: (isDarkMode: boolean) => void;
-}
-
-export default function ProofOfConsent({
-  isDarkMode,
-  setIsDarkMode,
-}: ProofOfConsentProps) {
+export default function ProofOfConsent() {
   const [name, setName] = useState("");
   const [consent, setConsent] = useState(false);
 
@@ -25,7 +16,6 @@ export default function ProofOfConsent({
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
-      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-2xl mx-auto mt-16">
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
