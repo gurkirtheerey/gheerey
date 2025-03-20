@@ -5,12 +5,35 @@ export default function ProofOfConsent() {
   const [name, setName] = useState("");
   const [consent, setConsent] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (consent) {
-      // Here you would typically handle the form submission
-      console.log("Form submitted with name:", name);
-      alert("Thank you for providing your consent!");
+      try {
+        const response = await fetch("/api/consent", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            consent,
+            timestamp: new Date().toISOString(),
+          }),
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          alert("Thank you for providing your consent!");
+          setName("");
+          setConsent(false);
+        } else {
+          alert("Error saving consent. Please try again.");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        alert("Error saving consent. Please try again.");
+      }
     }
   };
 
