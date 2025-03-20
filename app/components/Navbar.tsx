@@ -66,29 +66,29 @@ const Navbar = ({
           }`}
         >
           <li>
-            <a className="font-Ovo" href="#top">
+            <Link className="font-Ovo" href="#top">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="font-Ovo" href="#about">
+            <Link className="font-Ovo" href="#about">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="font-Ovo" href="#services">
+            <Link className="font-Ovo" href="#services">
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="font-Ovo" href="#work">
-              My Work
-            </a>
+            <Link className="font-Ovo" href="#work">
+              Projects
+            </Link>
           </li>
           <li>
-            <a className="font-Ovo" href="#contact">
+            <Link className="font-Ovo" href="#contact">
               Contact Me
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -103,7 +103,7 @@ const Navbar = ({
               className="w-6"
             />
           </button>
-          <a
+          <Link
             href="#contact"
             className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full dark:border-white/50"
           >
@@ -113,7 +113,7 @@ const Navbar = ({
               alt="contact"
               className="w-3"
             />
-          </a>
+          </Link>
           <button
             className="block md:hidden ml-3 cursor-pointer"
             onClick={handleOpenMenu}
@@ -141,29 +141,37 @@ const Navbar = ({
           </div>
 
           <li>
-            <a onClick={handleCloseMenu} className="font-Ovo" href="#top">
+            <Link onClick={handleCloseMenu} className="font-Ovo" href="#top">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={handleCloseMenu} className="font-Ovo" href="#about">
+            <Link onClick={handleCloseMenu} className="font-Ovo" href="#about">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={handleCloseMenu} className="font-Ovo" href="#services">
+            <Link
+              onClick={handleCloseMenu}
+              className="font-Ovo"
+              href="#services"
+            >
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={handleCloseMenu} className="font-Ovo" href="#work">
-              My Work
-            </a>
+            <Link onClick={handleCloseMenu} className="font-Ovo" href="#work">
+              Projects
+            </Link>
           </li>
           <li>
-            <a onClick={handleCloseMenu} className="font-Ovo" href="#contact">
+            <Link
+              onClick={handleCloseMenu}
+              className="font-Ovo"
+              href="#contact"
+            >
               Contact Me
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

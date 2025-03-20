@@ -6,6 +6,7 @@ const Header = () => {
   return (
     <div className="w-11/12 max-w-3xl text-center mx-auto flex flex-col items-center justify-center gap-4 h-screen">
       <motion.div
+        viewport={{ once: true }}
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
@@ -21,6 +22,7 @@ const Header = () => {
         <Image src={assets.hand_icon} alt="hand_icon" className="w-6" />
       </motion.h3>
       <motion.h1
+        viewport={{ once: true }}
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.3 }}
@@ -36,6 +38,7 @@ const Header = () => {
         <motion.a
           href="#contact"
           className="px-10 py-3 border border-white rounded-full text-white flex items-center gap-2 bg-black dark:bg-transparent dark:text-white dark:border-white"
+          viewport={{ once: true }}
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -51,6 +54,7 @@ const Header = () => {
           href="/gurkirt_heerey_resume.pdf"
           download="Gurkirt-Heerey-Resume.pdf"
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 dark:border-white/50 dark:text-black dark:bg-white"
+          viewport={{ once: true }}
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}

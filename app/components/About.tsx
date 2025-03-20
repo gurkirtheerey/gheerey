@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 const About = ({ isDarkMode }: { isDarkMode: boolean }) => {
   return (
     <motion.div
+      viewport={{ once: true }}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -11,6 +12,7 @@ const About = ({ isDarkMode }: { isDarkMode: boolean }) => {
       id="about"
     >
       <motion.h4
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
@@ -19,6 +21,7 @@ const About = ({ isDarkMode }: { isDarkMode: boolean }) => {
         Introduction
       </motion.h4>
       <motion.h2
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
@@ -27,12 +30,14 @@ const About = ({ isDarkMode }: { isDarkMode: boolean }) => {
         About me
       </motion.h2>
       <motion.div
+        viewport={{ once: true }}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         className="flex w-full flex-col lg:flex-row items-center gap-20 my-20"
       >
         <motion.div
+          viewport={{ once: true }}
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
@@ -45,6 +50,7 @@ const About = ({ isDarkMode }: { isDarkMode: boolean }) => {
           />
         </motion.div>
         <motion.div
+          viewport={{ once: true }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -65,6 +71,7 @@ const About = ({ isDarkMode }: { isDarkMode: boolean }) => {
           >
             {infoList.map(({ icon, title, description, iconDark }, index) => (
               <motion.li
+                viewport={{ once: true }}
                 whileInView={{ scale: 1.05 }}
                 key={index}
                 className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 transition-all duration-300 hover:shadow-black dark:border-white/ dark:hover:shadow-white dark:hover:bg-darkHover/50"
@@ -85,6 +92,7 @@ const About = ({ isDarkMode }: { isDarkMode: boolean }) => {
           </motion.ul>
 
           <motion.h4
+            viewport={{ once: true }}
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.3, delay: 0.5 }}
@@ -93,6 +101,7 @@ const About = ({ isDarkMode }: { isDarkMode: boolean }) => {
             Some of the tools I use include:
           </motion.h4>
           <motion.ul
+            viewport={{ once: true }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5, delay: 0.6 }}
@@ -100,6 +109,7 @@ const About = ({ isDarkMode }: { isDarkMode: boolean }) => {
           >
             {toolsData.map((tool, index) => (
               <motion.li
+                viewport={{ once: true }}
                 whileInView={{ scale: 1.1 }}
                 className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 transition-all duration-300"
                 key={index}

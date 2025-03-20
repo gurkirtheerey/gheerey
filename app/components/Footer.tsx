@@ -31,19 +31,19 @@ const Footer = ({ isDarkMode }: { isDarkMode: boolean }) => {
         <p>@ 2025 Gurkirt Heerey. All rights reserved.</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
+            <Link href="https://github.com/gurkirtheerey">GitHub</Link>
+          </li>
+          <li>
+            <Link href="https://www.linkedin.com/in/gheerey/">LinkedIn</Link>
+          </li>
+          <li>
             <Link
               target="_blank"
               href="/gurkirt_heerey_resume.pdf"
               download="Gurkirt-Heerey-Resume.pdf"
             >
-              Download my Resume!
+              Resume
             </Link>
-          </li>
-          <li>
-            <Link href="https://github.com/gurkirtheerey">GitHub</Link>
-          </li>
-          <li>
-            <Link href="https://www.linkedin.com/in/gheerey/">LinkedIn</Link>
           </li>
         </ul>
       </div>
